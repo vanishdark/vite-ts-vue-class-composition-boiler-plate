@@ -1,0 +1,28 @@
+<div class="bg-slate-50 w-screen h-screen flex flex-col items-center justify-center text-center">
+    <div class="flex mb-10">
+        <a href="https://vitejs.dev" target="_blank">
+            <img src="/vite.svg" class="w-48 h-48 mx-4" alt="Vite logo" />
+        </a>
+        <a href="https://vuejs.org/" target="_blank">
+            <img src="./assets/vue.svg" class="w-48 h-48 mx-4" alt="Vue logo" />
+        </a>
+        <a href="https://vuejs.org/" target="_blank">
+            <img src="./assets/tailwind.svg" class="w-48 h-48 mx-4" alt="Vue logo" />
+        </a>
+    </div>
+    <h1 class="text-4xl font-bold text-gray-700">Vite + Tailwind + Class Typescript</h1>
+    <h2 class="text-2xl text-gray-600">Boilerplate by Vanishdark</h2>
+    <h3 class="text-lg text-gray-500">Version 1.0.0</h3>
+    <div class="flex flex-col mt-10">
+        <h3 class="text-xl text-gray-500 mb-4">Route View Example ⬇️</h3>
+        <router-view></router-view>
+        <div class="mt-5">
+            <label for="small-input"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white text-left">Change Example
+                View Name</label>
+            <input type="text" id="small-input"
+                class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                @input="setName($event.target.value)">
+        </div>
+    </div>
+</div>
