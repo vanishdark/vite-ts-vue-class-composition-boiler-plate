@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`mount component 1`] = `
+"<div name=\\"Example Component\\" data-v-97b3bdbc=\\"\\">
+  <h1 data-v-97b3bdbc=\\"\\">Example Component</h1>
+</div>"
+`;
