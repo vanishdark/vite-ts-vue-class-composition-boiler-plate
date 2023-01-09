@@ -1,4 +1,5 @@
-<div class="bg-slate-50 w-screen h-screen flex flex-col items-center justify-center text-center">
+<div class="bg-slate-50 w-screen h-screen flex flex-col items-center justify-center text-center"
+    v-if="['/vite-ts-vue-class-composition-boiler-plate/'].includes(route)">
     <div class="flex mb-10">
         <a href="https://vitejs.dev" target="_blank">
             <img src="/vite.svg" class="w-48 h-48 mx-4" alt="Vite logo" />
@@ -13,7 +14,10 @@
     <h1 class="text-4xl font-bold text-gray-700">Vite + Tailwind + Class Typescript</h1>
     <h2 class="text-2xl text-gray-600">Boilerplate by Vanishdark</h2>
     <h3 class="text-lg text-gray-500">Version 1.0.0</h3>
-    <div class="flex flex-col mt-10">
+    <div class="my-5 text-xl text-blue-500 underline">
+        <router-link :to="{name: 'docs'}">Go To Documents</router-link>
+    </div>
+    <div class="flex flex-col mt-5">
         <h3 class="text-xl text-gray-500 mb-4">Route View Example ⬇️</h3>
         <router-view></router-view>
         <div class="mt-5">
@@ -25,4 +29,7 @@
                 @input="setName($event.target.value)">
         </div>
     </div>
+</div>
+<div v-else class="bg-slate-50 w-screen h-screen overflow-hidden">
+    <router-view></router-view>
 </div>
